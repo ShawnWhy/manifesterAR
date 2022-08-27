@@ -31,11 +31,30 @@
     <div>
     <a-scene embedded arjs>
       <a-marker 
-      preset="hiro"
+      
+      type='pattern'
+      url = './assets/pattern-face.patt'
       >
-        <a-entity id = "facemask" gltf-model="./assets/masksad2.gltf" position="0 -.5 0" rotation="-90 0 0"  animation-mixer="clip:sadmask; timeScale:0"/>
+        <a-entity id = "facemask" gltf-model="./assets/masksad2.gltf" position="0 -1.3 0" rotation="-75 0 0" scale="3 3 3" animation-mixer="clip:sadmask; timeScale:0"/>
 
       </a-marker>
+
+        <a-marker 
+        
+        type='pattern'
+        url = './assets/pattern-swirl.patt'
+        >
+          <a-entity  gltf-model="./assets/satyr.glb" rotation="0 0 0" scale=".1 .1 .1" position="0 1 0"/>
+  
+        </a-marker>
+        <a-marker 
+        
+        type='pattern'
+        url = './assets/pattern-zero.patt'
+        >
+          <a-entity  gltf-model="./assets/angelos.glb" rotation="0 0 0" scale=".1 .1 .1" position="0 1 0"/>
+  
+        </a-marker>
 
       
       <a-entity camera></a-entity>
@@ -115,6 +134,10 @@
             // code block
           
             // code block
+
+        
+            // preset="hiro"
+            
         }
 
 
